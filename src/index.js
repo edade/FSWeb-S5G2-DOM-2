@@ -45,3 +45,8 @@ const text2 = document.getElementsByClassName("text-content")[1];
 text2.addEventListener("wheel", (event) => {
   event.target.style.fontFamily = "Impact,Charcoal,sans-serif";
 });
+
+const inpt = document.getElementById("input");
+inpt.addEventListener("focus", (event) => {
+  event.target.style.backgroundColor = "pink";
+});
