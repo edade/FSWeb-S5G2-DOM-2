@@ -49,4 +49,7 @@ text2.addEventListener("wheel", (event) => {
 const inpt = document.getElementById("input");
 inpt.addEventListener("focus", (event) => {
   event.target.style.backgroundColor = "pink";
+  inpt.addEventListener("blur", (event) => {
+    event.target.style.backgroundColor = "white";
+  });
 });
